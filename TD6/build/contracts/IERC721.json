@@ -306,7 +306,7 @@
         "id": 547,
         "nodeType": "ImportDirective",
         "scope": 648,
-        "sourceUnit": 996,
+        "sourceUnit": 1068,
         "src": "28:38:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -320,10 +320,10 @@
               "id": 548,
               "name": "IERC165",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 995,
+              "referencedDeclaration": 1067,
               "src": "214:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC165_$995",
+                "typeIdentifier": "t_contract$_IERC165_$1067",
                 "typeString": "contract IERC165"
               }
             },
@@ -333,7 +333,7 @@
           }
         ],
         "contractDependencies": [
-          995
+          1067
         ],
         "contractKind": "contract",
         "documentation": "@title ERC721 Non-Fungible Token Standard basic interface\r\n@dev see https://eips.ethereum.org/EIPS/eip-721\r",
@@ -341,7 +341,7 @@
         "id": 647,
         "linearizedBaseContracts": [
           647,
-          995
+          1067
         ],
         "name": "IERC721",
         "nodeType": "ContractDefinition",
@@ -1540,7 +1540,7 @@
         "id": 547,
         "nodeType": "ImportDirective",
         "scope": 648,
-        "sourceUnit": 996,
+        "sourceUnit": 1068,
         "src": "28:38:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1554,10 +1554,10 @@
               "id": 548,
               "name": "IERC165",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 995,
+              "referencedDeclaration": 1067,
               "src": "214:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC165_$995",
+                "typeIdentifier": "t_contract$_IERC165_$1067",
                 "typeString": "contract IERC165"
               }
             },
@@ -1567,7 +1567,7 @@
           }
         ],
         "contractDependencies": [
-          995
+          1067
         ],
         "contractKind": "contract",
         "documentation": "@title ERC721 Non-Fungible Token Standard basic interface\r\n@dev see https://eips.ethereum.org/EIPS/eip-721\r",
@@ -1575,7 +1575,7 @@
         "id": 647,
         "linearizedBaseContracts": [
           647,
-          995
+          1067
         ],
         "name": "IERC721",
         "nodeType": "ContractDefinition",
@@ -2753,5 +2753,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-03-15T18:16:57.592Z"
+  "updatedAt": "2019-03-19T10:22:53.037Z"
 }

@@ -19,6 +19,7 @@ contract Ranch is ERC721 {
         string kind;
         int age;
         int strength;
+        bool sort;   // true = female,  false= male
         bool alive;
     }
 
@@ -54,7 +55,7 @@ contract Ranch is ERC721 {
         return _registerBreeder[_address];
     }
 
-    function declareAnimal(string _name, string _kind, int _age, int _strength) public 
+    function declareAnimal(string _name, string _kind, int _age, int _strength, bool _sort) public  // true = female,  false= male
     {
         Animal memory _Animal;
         require(isInRegister(msg.sender));
@@ -64,6 +65,7 @@ contract Ranch is ERC721 {
         _Animal.kind = _kind;
         _Animal.age = _age;
         _Animal.strength = _strength;
+        _Animal.sort = _sort;
         _Animal.alive = true;
 
         Animals.push(_Animal) - 1;
@@ -78,7 +80,12 @@ contract Ranch is ERC721 {
     }
 
 
-
+    function breedAnimal(uint _femaleNumber, uint _maleNumber, string _name,bool _sort ) public 
+    {
+        require((Animals[_femaleNumber].sort == true) && (Animals[_maleNumber].sort == false));
+        require((_tokenOwner[_femaleNumber] == msg.sender) || (_tokenOwner[_maleNumber] == msg.sender));
+        declareAnimal (_name, Animals[_femaleNumber].kind, 0, Animals[_maleNumber].strength,_sort);
+    }
 
 
 }
